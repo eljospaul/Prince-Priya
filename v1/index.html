@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070609">
+  <title>Prince & Priya — Wedding Invitation</title>
+  <meta name="description" content="A cinematic wedding invitation for Prince and Priya.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="locked">
+  <div id="loader">
+    <div class="loader-mark">P <span>&amp;</span> P</div>
+    <div class="loader-bar"><i></i></div><small>PREPARING YOUR INVITATION</small>
+  </div>
+  <canvas id="particles"></canvas>
+  <div class="noise"></div>
+
+  <!-- PRELUDE / ENVELOPE -->
+  <section class="prelude" id="prelude">
+    <div class="prelude-glow"></div>
+    <div class="corner c1"></div>
+    <div class="corner c2"></div>
+    <div class="corner c3"></div>
+    <div class="corner c4"></div>
+    <div class="prelude-content">
+      <div class="eyebrow">A wedding invitation · 2026</div>
+      <div class="monogram">P <span>&amp;</span> P</div>
+      <h1>Prince <i>&amp;</i> Priya</h1>
+      <div class="prelude-date">16 · 10 · 2026</div>
+      <button class="envelope-btn" id="open">
+        <span class="envelope-shell">
+          <span class="env-paper"></span>
+          <span class="env-flap"></span>
+          <span class="env-ribbon"></span>
+          <span class="wax">P<span>&amp;</span>P</span>
+        </span>
+        <b>Open the invitation</b>
+        <small>tap to begin the story</small>
+      </button>
+    </div>
+  </section>
+
+  <main id="invitation">
+    <header class="topbar">
+      <a class="mini-logo" href="#hero">P<span>&amp;</span>P</a>
+      <nav>
+        <a href="#story">Story</a><a href="#memories">Memories</a><a href="#wedding">Wedding</a><a href="#rsvp">RSVP</a>
+      </nav>
+      <button class="sound" id="sound">♫ <span>sound</span></button>
+    </header>
+
+    <!-- HERO: separate portraits + convergence -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-light hl1"></div>
+      <div class="hero-light hl2"></div>
+      <div class="portrait groom" data-speed=".16">
+        <div class="portrait-image"><img src="assets/groom-portrait.jpg" alt="Groom portrait"></div>
+        <div class="portrait-label"><span>THE GROOM</span><b>Prince</b></div>
+      </div>
+      <div class="portrait bride" data-speed=".13">
+        <div class="portrait-image"><img src="assets/bride-portrait.jpg" alt="Bride portrait"></div>
+        <div class="portrait-label"><span>THE BRIDE</span><b>Priya</b></div>
+      </div>
+      <div class="hero-center">
+        <div class="eyebrow">Together with their families</div>
+        <h2>Prince <em>&amp;</em> Priya</h2>
+        <p class="script">two stories · one forever</p>
+        <div class="gold-rule"><i></i><b>✦</b><i></i></div>
+        <p class="hero-date">FRIDAY · 16 OCTOBER 2026 · 5:30 PM</p>
+        <a href="#story" class="begin">Begin the story <span>↓</span></a>
+      </div>
+      <div class="hero-scroll">SCROLL TO REVEAL <i></i></div>
+    </section>
+
+    <!-- CINEMATIC CONVERGENCE: portraits move inward, couple emerges -->
+    <section class="convergence">
+      <div class="convergence-pin">
+        <div class="convergence-bg"></div>
+        <div class="convergence-title">
+          <span>CHAPTER I</span>
+          <h3>Separate paths.<br><em>One destination.</em></h3>
+        </div>
+        <div class="con-person con-groom"><img src="assets/groom-portrait.jpg"></div>
+        <div class="con-person con-bride"><img src="assets/bride-portrait.jpg"></div>
+        <div class="con-couple"><img src="assets/couple.jpg"></div>
+        <div class="con-ring">✦</div>
+        <div class="con-caption">AND THEN · THERE WAS US</div>
+      </div>
+    </section>
+
+    <!-- STORYBOARD / STICKY SCENES -->
+    <section class="story" id="story">
+      <div class="story-pin">
+        <div class="story-bg"></div>
+        <div class="story-chapter"><span>OUR STORYBOARD</span><b id="storyNo">01</b><i>/ 04</i></div>
+        <div class="story-line"><i></i></div>
+
+        <article class="scene scene-1 active">
+          <div class="scene-image"><img src="assets/memory-3.jpg"></div>
+          <div class="scene-copy"><small>FRAME 01</small>
+            <h3>It started<br><em>with a moment.</em></h3>
+            <p>Before there was a wedding, there was a story waiting to unfold.</p>
+          </div>
+        </article>
+        <article class="scene scene-2">
+          <div class="scene-image"><img src="assets/memory-2.jpg"></div>
+          <div class="scene-copy"><small>FRAME 02</small>
+            <h3>Then came<br><em>the little things.</em></h3>
+            <p>Shared smiles. Ordinary days. Memories that quietly became everything.</p>
+          </div>
+        </article>
+        <article class="scene scene-3">
+          <div class="scene-image"><img src="assets/memory-4.jpg"></div>
+          <div class="scene-copy"><small>FRAME 03</small>
+            <h3>Two became<br><em>a team.</em></h3>
+            <p>Side by side, through new places, new seasons and countless conversations.</p>
+          </div>
+        </article>
+        <article class="scene scene-4">
+          <div class="scene-image"><img style="height: 225%;" src="assets/memory-1.jpg"></div>
+          <div class="scene-copy"><small>FRAME 04</small>
+            <h3>And now,<br><em>forever.</em></h3>
+            <p>The next chapter begins on 16 October 2026.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- QUOTE / BREATH -->
+    <section class="quote">
+      <div class="quote-orbit"></div>
+      <div class="quote-inner reveal">
+        <span>THE PROMISE</span>
+        <blockquote>“Therefore what God has <br>joined together,<br>let no one separate.”</blockquote>
+        <small>MARK 10:9</small>
+        <div class="gold-rule"><i></i><b>✦</b><i></i></div>
+        <p>Some stories are written by chance.<br>Some are written by grace.</p>
+      </div>
+    </section>
+
+    <!-- COUPLE FILM REVEAL -->
+    <section class="film">
+      <div class="film-pin">
+        <div class="film-image"><img src="assets/couple.jpg"></div>
+        <div class="film-overlay"></div>
+        <div class="film-frame"></div>
+        <div class="film-copy">
+          <span>CHAPTER II · THE COUPLE</span>
+          <h3>Here begins<br><em>forever.</em></h3>
+        </div>
+        <div class="film-meta">PRINCE &amp; PRIYA · 16—10—2026</div>
+      </div>
+    </section>
+
+    <!-- MEMORY HORIZONTAL REEL -->
+    <section class="memories" id="memories">
+      <div class="memories-pin">
+        <div class="memory-intro">
+          <span>CHAPTER III</span>
+          <h3>Moments<br><em>worth keeping.</em></h3>
+          <p>Scroll through a few frames from the journey.</p>
+        </div>
+        <div class="reel">
+          <figure class="reel-card r1"><img src="assets/memory-1.jpg">
+            <figcaption>the beginning</figcaption>
+          </figure>
+          <figure class="reel-card r2"><img src="assets/memory-2.jpg">
+            <figcaption>her smile</figcaption>
+          </figure>
+          <figure class="reel-card r3"><img src="assets/memory-3.jpg">
+            <figcaption>their laughter</figcaption>
+          </figure>
+          <figure class="reel-card r4"><img src="assets/memory-4.jpg">
+            <figcaption>side by side</figcaption>
+          </figure>
+          <figure class="reel-card r5"><img src="assets/couple.jpg">
+            <figcaption>the two of them</figcaption>
+          </figure>
+        </div>
+        <div class="reel-progress"><b>01</b><i></i><span>05</span></div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown">
+      <div class="count-bg"></div>
+      <div class="count-ring ringA"></div>
+      <div class="count-ring ringB"></div>
+      <div class="count-inner reveal">
+        <span>CHAPTER IV · THE DAY</span>
+        <h3>Until we say<br><em>“I do”</em></h3>
+        <div class="timer">
+          <div><b id="days">00</b><span>DAYS</span></div><i>:</i>
+          <div><b id="hours">00</b><span>HOURS</span></div><i>:</i>
+          <div><b id="mins">00</b><span>MINUTES</span></div><i>:</i>
+          <div><b id="secs">00</b><span>SECONDS</span></div>
+        </div>
+        <p>Friday · 16 October 2026</p>
+      </div>
+    </section>
+
+    <!-- WEDDING DETAILS -->
+    <section class="wedding cream" id="wedding">
+      <div class="wide">
+        <div class="section-title reveal"><span>SAVE THE DATE</span>
+          <h3>The Wedding</h3>
+          <div class="gold-rule"><i></i><b>✦</b><i></i></div>
+        </div>
+        <div class="event-grid">
+          <article class="event reveal">
+            <div class="event-number">01</div><span>HOLY MATRIMONY</span>
+            <h4>Wedding Ceremony</h4>
+            <b>16 October 2026</b><strong>5:30pm</strong>
+            <p>Crown Hall<br>Bhimaas Temple Tree Hotel<br>100 ft Road, Vadapalani, Chennai – 600026<br><small>(Opposite
+                to SIMS Hospital)</small></p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Crown+Hall+Bhimaas+Temple+Tree+Hotel+Vadapalani+Chennai"
+              target="_blank">VIEW ON MAP ↗</a>
+          </article>
+          <article class="event reveal">
+            <div class="event-number">02</div><span>AFTER THE CEREMONY</span>
+            <h4>Reception</h4>
+            <b>16 October 2026</b><strong>7:00pm</strong>
+            <p>At the same premises<br>Crown Hall, Bhimaas Temple Tree Hotel<br>100 ft Road, Vadapalani, Chennai</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Crown+Hall+Bhimaas+Temple+Tree+Hotel+Vadapalani+Chennai"
+              target="_blank">GET DIRECTIONS ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLESSINGS -->
+    <section class="blessings">
+      <div class="wide">
+        <div class="section-title reveal"><span>WITH BLESSINGS AND GRACE</span>
+          <h3>In the Presence of</h3>
+          <div class="gold-rule"><i></i><b>✦</b><i></i></div>
+        </div>
+        <div class="leaders">
+          <article class="leader reveal"><small>01</small>
+            <h4>His Excellency<br>Rev. Dr. E. Alwin Thomas</h4>
+            <p>Founder of Ruah Ministries</p>
+          </article>
+          <article class="leader reveal"><small>02</small>
+            <h4>His Excellency<br>Rev. Johnson Ramachandran</h4>
+            <p>Senior Pastor, Ebenezer AG Church, Delhi NCR</p>
+          </article>
+          <article class="leader reveal"><small>03</small>
+            <h4>His Excellency<br>Rev. Rabi Fletcher</h4>
+            <p>Senior Pastor, Emmanuel AG Church, Port Blair, Andaman &amp; Nicobar Islands</p>
+          </article>
+        </div>
+        <p class="ministry reveal">The wedding ceremony will be consecrated under the aegis of <b>Ruah Ministries</b>.
+        </p>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp" id="rsvp">
+      <div class="rsvp-box reveal">
+        <div class="rsvp-corner"></div>
+        <span>WITH BEST COMPLIMENTS FROM</span>
+        <h3 style="font-family: Cinzel; font-size: 3.5em;">Ms. Blessy Jesintha,<br>Relatives &amp; Friends</h3>
+        <div class="gold-rule"><i></i><b>♥</b><i></i></div>
+        <small>RSVP</small>
+        <p><a href="tel:+919725429896">+91 97254 29896</a><b>·</b><a href="tel:+918460677736">+91 84606 77736</a></p>
+        <em>We cannot wait to celebrate this blessed beginning with you.</em>
+      </div>
+    </section>
+
+    <footer>
+      <div>P <span>&amp;</span> P</div>
+      <p>PRINCE &amp; PRIYA · 16 · 10 · 2026</p><a href="#hero">BACK TO THE BEGINNING ↑</a>
+    </footer>
+  </main>
+
+  <audio id="audio" loop preload="auto">
+    <source src="assets/ambient.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
