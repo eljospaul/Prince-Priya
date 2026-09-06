@@ -10,30 +10,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="locked" data-lang="en">
+<body class="locked">
   <div id="loader">
     <div class="loader-mark">P <span>&amp;</span> P</div>
-    <div class="loader-bar"><i></i></div><small data-i18n="loader">PREPARING YOUR INVITATION</small>
+    <div class="loader-bar"><i></i></div><small>PREPARING YOUR INVITATION</small>
   </div>
   <canvas id="particles" aria-hidden="true"></canvas>
   <div class="noise" aria-hidden="true"></div>
-
-  <!-- LANGUAGE SELECTOR -->
-  <div class="language-switcher" id="languageSwitcher">
-    <button class="language-toggle" id="languageToggle" type="button" aria-label="Select language">
-      <span class="lang-current">EN</span> <span class="lang-chevron">⌄</span>
-    </button>
-    <div class="language-menu" id="languageMenu">
-      <button type="button" data-lang="en">English</button>
-      <button type="button" data-lang="ta">தமிழ்</button>
-      <button type="button" data-lang="hi">हिन्दी</button>
-    </div>
-  </div>
 
   <!-- CINEMATIC PRELUDE -->
   <section class="prelude" id="prelude">
@@ -43,7 +31,7 @@
     <div class="corner c3"></div>
     <div class="corner c4"></div>
     <div class="prelude-content">
-      <div class="eyebrow"><span data-i18n="preludeEyebrow" style="font-size: 12px; letter-spacing: normal;">A wedding invitation · 2026</span></div>
+      <div class="eyebrow">A wedding invitation · 2026</div>
       <div class="monogram">P <span>&amp;</span> P</div>
       <h1>Prince <i>&amp;</i> Priya</h1>
       <div class="prelude-date">16 · 10 · 2026</div>
@@ -63,8 +51,8 @@
               alt="Prince and Priya">
           </span>
         </span>
-        <b data-i18n="openInvitation" style="letter-spacing: normal;">Open the invitation</b>
-        <small data-i18n="tapBegin" style="letter-spacing: normal;">tap to begin the story</small>
+        <b>Open the invitation</b>
+        <small>tap to begin the story</small>
       </button>
     </div>
   </section>
@@ -72,8 +60,9 @@
   <main id="invitation">
     <header class="topbar">
       <a class="mini-logo" href="#hero">P<span>&amp;</span>P</a>
-      <nav><a href="#story" data-i18n="navStory" style="letter-spacing: normal;">Story</a><a href="#promise" data-i18n="navPromise" style="letter-spacing: normal;">Promise</a><a href="#wedding" data-i18n="navWedding" style="letter-spacing: normal;">Wedding</a><a href="#rsvp" data-i18n="navRsvp" style="letter-spacing: normal;">RSVP</a></nav>
-      <button class="sound" id="sound" type="button">♫</button>
+      <nav><a href="#story">Story</a><a href="#promise">Promise</a><a href="#wedding">Wedding</a><a
+          href="#rsvp">RSVP</a></nav>
+      <button class="sound" id="sound" type="button">♫ <span>sound</span></button>
     </header>
 
     <!-- HERO: ONE PHOTO, CINEMATIC PARALLAX -->
@@ -86,13 +75,13 @@
       </div>
       <div class="hero-vignette"></div>
       <div class="hero-center">
-        <div class="eyebrow" data-i18n="heroEyebrow">Together with their families</div>
+        <div class="eyebrow">Together with their families</div>
         <h2>Prince <em>&amp;</em> Priya</h2>
-        <p class="script" data-i18n="heroScript" style="font-size: 65px; text-transform: capitalize;">Two Hearts · One Promise · Forever</p>
+        <p class="script">two hearts · one promise · forever</p>
         <div class="gold-rule"><i></i><b>✦</b><i></i></div>
-        <p class="hero-date" data-i18n="heroDate" style="font-size: 20px; letter-spacing: normal;">FRIDAY · 16 OCTOBER 2026 · 5:30 PM · HOTEL BHIMAS, CHENNAI</p>
+        <p class="hero-date">FRIDAY · 16 OCTOBER 2026 · 5:30 PM</p>
       </div>
-      <div class="hero-scroll" data-i18n="heroScroll">SCROLL TO REVEAL <i></i></div>
+      <div class="hero-scroll">SCROLL TO REVEAL <i></i></div>
     </section>
 
     <!-- SHORT STICKY STORYBOARD: SAME COUPLE PHOTO -->
@@ -135,11 +124,11 @@
 
       </div>
       <div class="promise-inner reveal">
-        <span data-i18n="promiseTitle">THE PROMISE</span>
-        <blockquote data-i18n="mark10">“Therefore what God has<br>joined together,<br>let no one separate.”</blockquote>
-        <small data-i18n="markRef">MARK 10:9</small>
+        <span>THE PROMISE</span>
+        <blockquote>“Therefore what God has<br>joined together,<br>let no one separate.”</blockquote>
+        <small>MARK 10:9</small>
         <div class="gold-rule"><i></i><b>✦</b><i></i></div>
-        <p><span data-i18n="eccl">“...A threefold cord is not quickly broken...”</span><br><em>Ecclesiastes 4:12</em></p>
+        <p>“A threefold cord is not quickly broken.”<br><em>Ecclesiastes 4:12</em></p>
       </div>
     </section>
 
@@ -149,8 +138,8 @@
         <div class="film-image"><img src="assets/couple.jpeg" alt="Prince and Priya"></div>
         <div class="film-overlay"></div>
         <div class="film-frame"></div>
-        <div class="film-copy"><span data-i18n="filmChapter">CHAPTER II · THE COUPLE</span>
-          <h3 data-i18n="filmTitle">Here begins<br><em>forever.</em></h3>
+        <div class="film-copy"><span>CHAPTER II · THE COUPLE</span>
+          <h3>Here begins<br><em>forever.</em></h3>
         </div>
         <div class="film-meta">PRINCE &amp; PRIYA · 16—10—2026</div>
       </div>
@@ -162,39 +151,40 @@
       <div class="count-ring ringA"></div>
       <div class="count-ring ringB"></div>
       <div class="count-inner reveal">
-        <span data-i18n="countTitle" style="letter-spacing: normal;">THE DAY IS DRAWING NEAR</span>
-        <h3 data-i18n="countHeading">Until we say<br><em>“I do”</em></h3>
+        <span>THE DAY IS DRAWING NEAR</span>
+        <h3>Until we say<br><em>“I do”</em></h3>
         <div class="timer">
-          <div><b id="days">00</b><span data-i18n="days">DAYS</span></div><i>:</i>
-          <div><b id="hours">00</b><span data-i18n="hours">HOURS</span></div><i>:</i>
-          <div><b id="mins">00</b><span data-i18n="minutes">MINUTES</span></div><i>:</i>
-          <div><b id="secs">00</b><span data-i18n="seconds">SECONDS</span></div>
+          <div><b id="days">00</b><span>DAYS</span></div><i>:</i>
+          <div><b id="hours">00</b><span>HOURS</span></div><i>:</i>
+          <div><b id="mins">00</b><span>MINUTES</span></div><i>:</i>
+          <div><b id="secs">00</b><span>SECONDS</span></div>
         </div>
-        <p data-i18n="countDate">Friday · 16 October 2026</p>
+        <p>Friday · 16 October 2026</p>
       </div>
     </section>
 
     <!-- DETAILS -->
     <section class="wedding cream" id="wedding">
       <div class="wide">
-        <div class="section-title reveal"><span data-i18n="saveDate" style="letter-spacing: normal; font-size: 14px;">SAVE THE DATE</span>
-          <h3 data-i18n="weddingTitle" style="letter-spacing: normal;">The Wedding</h3>
+        <div class="section-title reveal"><span>SAVE THE DATE</span>
+          <h3>The Wedding</h3>
           <div class="gold-rule"><i></i><b>✦</b><i></i></div>
         </div>
         <div class="event-grid">
-          <article class="event reveal" >
-            <div class="event-number">01</div><span data-i18n="holyMatrimony" style="letter-spacing: normal;">HOLY MATRIMONY</span>
-            <h4 data-i18n="ceremony" style="letter-spacing: normal;">Wedding Ceremony</h4><b data-i18n="dateFull">16 October 2026</b><strong data-i18n="time530">5:30pm</strong>
-            <p data-i18n="venue1" style="letter-spacing: normal;">Crown Hall<br>Bhimaas Temple Tree Hotel<br>100 ft Road, Vadapalani, Chennai – 600026<br><small data-i18n="opposite">Opposite to SIMS Hospital</small></p><a
+          <article class="event reveal">
+            <div class="event-number">01</div><span>HOLY MATRIMONY</span>
+            <h4>Wedding Ceremony</h4><b>16 October 2026</b><strong>5:30pm</strong>
+            <p>Crown Hall<br>Bhimaas Temple Tree Hotel<br>100 ft Road, Vadapalani, Chennai – 600026<br><small>Opposite
+                to SIMS Hospital</small></p><a
               href="https://www.google.com/maps/search/?api=1&query=Crown+Hall+Bhimaas+Temple+Tree+Hotel+Vadapalani+Chennai"
-              target="_blank" rel="noopener"><span data-i18n="viewMap" style="letter-spacing: normal;">VIEW ON MAP ↗</span></a>
+              target="_blank" rel="noopener">VIEW ON MAP ↗</a>
           </article>
           <article class="event reveal">
-            <div class="event-number">02</div><span data-i18n="afterCeremony" style="letter-spacing: normal;">AFTER THE CEREMONY</span>
-            <h4 data-i18n="reception" style="letter-spacing: normal;">Reception</h4><b data-i18n="dateFull">16 October 2026</b><strong data-i18n="time700">7:00pm</strong>
-            <p data-i18n="venue2" style="letter-spacing: normal;">At the same premises<br>Crown Hall, Bhimaas Temple Tree Hotel<br>100 ft Road, Vadapalani, Chennai</p><a
+            <div class="event-number">02</div><span>AFTER THE CEREMONY</span>
+            <h4>Reception</h4><b>16 October 2026</b><strong>7:00pm</strong>
+            <p>At the same premises<br>Crown Hall, Bhimaas Temple Tree Hotel<br>100 ft Road, Vadapalani, Chennai</p><a
               href="https://www.google.com/maps/search/?api=1&query=Crown+Hall+Bhimaas+Temple+Tree+Hotel+Vadapalani+Chennai"
-              target="_blank" rel="noopener"><span data-i18n="directions" style="letter-spacing: normal;">GET DIRECTIONS ↗</span></a>
+              target="_blank" rel="noopener">GET DIRECTIONS ↗</a>
           </article>
         </div>
       </div>
@@ -203,59 +193,64 @@
     <!-- BLESSINGS -->
     <section class="blessings">
       <div class="wide">
-        <div class="section-title reveal"><span data-i18n="blessingsTitle" style="letter-spacing: normal; font-size: 14px;">WITH BLESSINGS AND GRACE</span>
-          <h3 data-i18n="presence" style="letter-spacing: normal;">In the Presence of</h3>
+        <div class="section-title reveal"><span>WITH BLESSINGS AND GRACE</span>
+          <h3>In the Presence of</h3>
           <div class="gold-rule"><i></i><b>✦</b><i></i></div>
         </div>
         <div class="leaders">
           <article class="leader reveal"><small>01</small>
-            <h4 data-i18n="leaderName2">His Excellency<br>Rev. Dr. E. Alwin Thomas</h4>
-            <p data-i18n="leader2">Founder of Ruah Ministries</p>
+            <h4>His Excellency<br>Rev. Johnson Ramachandran</h4>
+            <p>Senior Pastor, Ebenezer AG Church, Delhi NCR</p>
           </article>
           <article class="leader reveal"><small>02</small>
-            <h4 data-i18n="leaderName1">His Excellency<br>Rev. Johnson Ramachandran</h4>
-            <p data-i18n="leader1">Senior Pastor, Ebenezer AG Church, Delhi NCR</p>
+            <h4>His Excellency<br>Rev. Dr. E. Alwin Thomas</h4>
+            <p>Founder of Ruah Ministries</p>
           </article>
           <article class="leader reveal"><small>03</small>
-            <h4 data-i18n="leaderName3">His Excellency<br>Rev. Rabi Fletcher</h4>
-            <p data-i18n="leader3">Senior Pastor, Emmanuel AG Church, Port Blair, Andaman &amp; Nicobar Islands</p>
+            <h4>His Excellency<br>Rev. Rabi Fletcher</h4>
+            <p>Senior Pastor, Emmanuel AG Church, Port Blair, Andaman &amp; Nicobar Islands</p>
           </article>
         </div>
-        <p class="ministry reveal" data-i18n="ministry" style="font-size: 12px;">The wedding ceremony will be consecrated under the aegis of <b>Ruah Ministries</b>.</p>
+        <p class="ministry reveal">The wedding ceremony will be consecrated under the aegis of <b>Ruah Ministries</b>.
+        </p>
       </div>
     </section>
 
     <!-- CHRISTIAN BLESSING -->
     <section class="blessing">
       <div class="wide blessing-inner reveal">
-        <span data-i18n="grace" style="font-size: 14px; letter-spacing: normal;">BY THE GRACE OF GOD</span>
-        <h3 data-i18n="covenant">Two lives.<br><em>One covenant.</em></h3>
-        <p data-i18n="blessingText">With grateful hearts, Prince and Priya invites you to witness and celebrate their union as they begin their married life in faith, love and fellowship.</p>
+        <div class="cross-mark">✝</div>
+        <span>BY THE GRACE OF GOD</span>
+        <h3>Two lives.<br><em>One covenant.</em></h3>
+        <p>With grateful hearts, Prince and Priya invite you to witness and celebrate their union as they begin their
+          married life in faith, love and fellowship.</p>
         <div class="gold-rule"><i></i><b>♥</b><i></i></div>
-        <small data-i18n="psalm" style="letter-spacing: normal;">“The LORD has done great things for us, and we are filled with joy.”<br>— PSALM 126:3</small>
+        <small>“The LORD has done great things for us, and we are filled with joy.”<br>— PSALM 126:3</small>
       </div>
     </section>
 
     <!-- RSVP -->
     <section class="rsvp" id="rsvp">
       <div class="rsvp-box reveal">
-        <span data-i18n="compliments">WITH BEST COMPLIMENTS FROM</span>
+        <span>WITH BEST COMPLIMENTS FROM</span>
         <h3 style="font-size: 40px;">Ms. Blessy Jesintha,<br>Relatives &amp; Friends</h3>
         <div class="gold-rule"><i></i><b>♥</b><i></i></div>
-        <small data-i18n="rsvp">RSVP</small>
-        <p><a href="tel:+919725429896">+91 97254 29896</a><b>·</b><a href="tel:+918460677736">+91 84606 77736</a>·</b><a href="tel:+918190963738">+91 81909 63738</a></p>
-        <em data-i18n="rsvpText">We cannot wait to celebrate this blessed beginning with you.</em>
+        <small>RSVP</small>
+        <p><a href="tel:+919725429896">+91 97254 29896</a><b>·</b><a href="tel:+918460677736">+91 84606 77736</a></p>
+        <em>We cannot wait to celebrate this blessed beginning with you.</em>
       </div>
     </section>
 
     <footer>
       <div>P <span>&amp;</span> P</div>
-      <p>PRINCE &amp; PRIYA · 16 · 10 · 2026</p><a href="#hero" data-i18n="backTop" style="letter-spacing: normal;">BACK TO THE BEGINNING ↑</a>
+      <p>PRINCE &amp; PRIYA · 16 · 10 · 2026</p><a href="#hero">BACK TO THE BEGINNING ↑</a>
     </footer>
   </main>
 
-  <audio id="audio" loop preload="none"></audio>
-  <script src="script.js?v=6"></script>
+  <audio id="audio" loop preload="auto">
+    <source src="assets/ambient.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
 </body>
 
 </html>
