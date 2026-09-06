@@ -35,7 +35,7 @@ if (openButton) {
         */
         if (!audio.src || audio.src === window.location.href) {
           audio.src =
-            'Prince-Priya/assets/ambient.mp3';
+            './assets/ambient.mp3';
         }
 
         const playPromise = audio.play();
