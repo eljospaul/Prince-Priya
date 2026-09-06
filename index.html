@@ -23,17 +23,6 @@
   <canvas id="particles" aria-hidden="true"></canvas>
   <div class="noise" aria-hidden="true"></div>
 
-  <!-- LANGUAGE SELECTOR -->
-  <div class="language-switcher" id="languageSwitcher">
-    <button class="language-toggle" id="languageToggle" type="button" aria-label="Select language">
-      <span class="lang-current">EN</span> <span class="lang-chevron">⌄</span>
-    </button>
-    <div class="language-menu" id="languageMenu">
-      <button type="button" data-lang="en">English</button>
-      <button type="button" data-lang="ta">தமிழ்</button>
-      <button type="button" data-lang="hi">हिन्दी</button>
-    </div>
-  </div>
 
   <!-- CINEMATIC PRELUDE -->
   <section class="prelude" id="prelude">
@@ -43,7 +32,8 @@
     <div class="corner c3"></div>
     <div class="corner c4"></div>
     <div class="prelude-content">
-      <div class="eyebrow"><span data-i18n="preludeEyebrow" style="font-size: 12px; letter-spacing: normal;">A wedding invitation · 2026</span></div>
+      <div class="eyebrow"><span data-i18n="preludeEyebrow" style="font-size: 12px; letter-spacing: normal;">A wedding
+          invitation · 2026</span></div>
       <div class="monogram">P <span>&amp;</span> P</div>
       <h1>Prince <i>&amp;</i> Priya</h1>
       <div class="prelude-date">16 · 10 · 2026</div>
@@ -72,7 +62,21 @@
   <main id="invitation">
     <header class="topbar">
       <a class="mini-logo" href="#hero">P<span>&amp;</span>P</a>
-      <nav><a href="#story" data-i18n="navStory" style="letter-spacing: normal;">Story</a><a href="#promise" data-i18n="navPromise" style="letter-spacing: normal;">Promise</a><a href="#wedding" data-i18n="navWedding" style="letter-spacing: normal;">Wedding</a><a href="#rsvp" data-i18n="navRsvp" style="letter-spacing: normal;">RSVP</a></nav>
+      <!-- <nav><a href="#story" data-i18n="navStory" style="letter-spacing: normal;">Story</a><a href="#promise"
+          data-i18n="navPromise" style="letter-spacing: normal;">Promise</a><a href="#wedding" data-i18n="navWedding"
+          style="letter-spacing: normal;">Wedding</a><a href="#rsvp" data-i18n="navRsvp"
+          style="letter-spacing: normal;">RSVP</a></nav> -->
+      <div class="language-switcher" id="languageSwitcher">
+        <button class="language-toggle" id="languageToggle" type="button"
+          aria-label="Select language">
+          <span class="lang-current">EN</span> <span class="lang-chevron">⌄</span>
+        </button>
+        <div class="language-menu" id="languageMenu">
+          <button type="button" data-lang="en">English</button>
+          <button type="button" data-lang="ta">தமிழ்</button>
+          <button type="button" data-lang="hi">हिन्दी</button>
+        </div>
+      </div>
       <button class="sound" id="sound" type="button">♫</button>
     </header>
 
@@ -88,9 +92,11 @@
       <div class="hero-center">
         <div class="eyebrow" data-i18n="heroEyebrow" style="letter-spacing: normal;">Together with their families</div>
         <h2>Prince <em>&amp;</em> Priya</h2>
-        <p class="script" data-i18n="heroScript" style="font-size: 65px; text-transform: capitalize;">Two Hearts · One Promise · Forever</p>
+        <p class="script" data-i18n="heroScript" style="text-transform: capitalize;">Two Hearts · One Promise · Forever
+        </p>
         <div class="gold-rule"><i></i><b>✦</b><i></i></div>
-        <p class="hero-date" data-i18n="heroDate" style="font-size: 20px; letter-spacing: normal;">FRIDAY · 16 OCTOBER 2026 · 5:30 PM · HOTEL BHIMAS, CHENNAI</p>
+        <p class="hero-date" data-i18n="heroDate" style="letter-spacing: normal;">FRIDAY · 16 OCTOBER 2026 · 5:30 PM ·
+          HOTEL BHIMAS, CHENNAI</p>
       </div>
       <div class="hero-scroll" data-i18n="heroScroll">SCROLL TO REVEAL <i></i></div>
     </section>
@@ -139,7 +145,8 @@
         <blockquote data-i18n="mark10">“Therefore what God has<br>joined together,<br>let no one separate.”</blockquote>
         <small data-i18n="markRef">MARK 10:9</small>
         <div class="gold-rule"><i></i><b>✦</b><i></i></div>
-        <p><span data-i18n="eccl">“...A threefold cord is not quickly broken...”</span><br><em>Ecclesiastes 4:12</em></p>
+        <p><span data-i18n="eccl">“...A threefold cord is not quickly broken...”</span><br><em>Ecclesiastes 4:12</em>
+        </p>
       </div>
     </section>
 
@@ -177,24 +184,33 @@
     <!-- DETAILS -->
     <section class="wedding cream" id="wedding">
       <div class="wide">
-        <div class="section-title reveal"><span data-i18n="saveDate" style="letter-spacing: normal; font-size: 14px;">SAVE THE DATE</span>
+        <div class="section-title reveal"><span data-i18n="saveDate"
+            style="letter-spacing: normal; font-size: 14px;">SAVE THE DATE</span>
           <h3 data-i18n="weddingTitle" style="letter-spacing: normal;">The Wedding</h3>
           <div class="gold-rule"><i></i><b>✦</b><i></i></div>
         </div>
         <div class="event-grid">
-          <article class="event reveal" >
-            <div class="event-number">01</div><span data-i18n="holyMatrimony" style="letter-spacing: normal;">HOLY MATRIMONY</span>
-            <h4 data-i18n="ceremony" style="letter-spacing: normal;">Wedding Ceremony</h4><b data-i18n="dateFull">16 October 2026</b><strong data-i18n="time530">5:30pm</strong>
-            <p data-i18n="venue1" style="letter-spacing: normal;">Crown Hall<br>Bhimaas Temple Tree Hotel<br>100 ft Road, Vadapalani, Chennai – 600026<br><small data-i18n="opposite">Opposite to SIMS Hospital</small></p><a
+          <article class="event reveal">
+            <div class="event-number">01</div><span data-i18n="holyMatrimony" style="letter-spacing: normal;">HOLY
+              MATRIMONY</span>
+            <h4 data-i18n="ceremony" style="letter-spacing: normal;">Wedding Ceremony</h4><b data-i18n="dateFull">16
+              October 2026</b><strong data-i18n="time530">5:30pm</strong>
+            <p data-i18n="venue1" style="letter-spacing: normal;">Crown Hall<br>Bhimaas Temple Tree Hotel<br>100 ft
+              Road, Vadapalani, Chennai – 600026<br><small data-i18n="opposite">Opposite to SIMS Hospital</small></p><a
               href="https://www.google.com/maps/search/?api=1&query=Crown+Hall+Bhimaas+Temple+Tree+Hotel+Vadapalani+Chennai"
-              target="_blank" rel="noopener"><span data-i18n="viewMap" style="letter-spacing: normal;">VIEW ON MAP ↗</span></a>
+              target="_blank" rel="noopener"><span data-i18n="viewMap" style="letter-spacing: normal;">VIEW ON MAP
+                ↗</span></a>
           </article>
           <article class="event reveal">
-            <div class="event-number">02</div><span data-i18n="afterCeremony" style="letter-spacing: normal;">AFTER THE CEREMONY</span>
-            <h4 data-i18n="reception" style="letter-spacing: normal;">Reception</h4><b data-i18n="dateFull">16 October 2026</b><strong data-i18n="time700">7:00pm</strong>
-            <p data-i18n="venue2" style="letter-spacing: normal;">At the same premises<br>Crown Hall, Bhimaas Temple Tree Hotel<br>100 ft Road, Vadapalani, Chennai</p><a
+            <div class="event-number">02</div><span data-i18n="afterCeremony" style="letter-spacing: normal;">AFTER THE
+              CEREMONY</span>
+            <h4 data-i18n="reception" style="letter-spacing: normal;">Reception</h4><b data-i18n="dateFull">16 October
+              2026</b><strong data-i18n="time700">7:00pm</strong>
+            <p data-i18n="venue2" style="letter-spacing: normal;">At the same premises<br>Crown Hall, Bhimaas Temple
+              Tree Hotel<br>100 ft Road, Vadapalani, Chennai</p><a
               href="https://www.google.com/maps/search/?api=1&query=Crown+Hall+Bhimaas+Temple+Tree+Hotel+Vadapalani+Chennai"
-              target="_blank" rel="noopener"><span data-i18n="directions" style="letter-spacing: normal;">GET DIRECTIONS ↗</span></a>
+              target="_blank" rel="noopener"><span data-i18n="directions" style="letter-spacing: normal;">GET DIRECTIONS
+                ↗</span></a>
           </article>
         </div>
       </div>
@@ -203,7 +219,8 @@
     <!-- BLESSINGS -->
     <section class="blessings">
       <div class="wide">
-        <div class="section-title reveal"><span data-i18n="blessingsTitle" style="letter-spacing: normal; font-size: 14px;">WITH BLESSINGS AND GRACE</span>
+        <div class="section-title reveal"><span data-i18n="blessingsTitle"
+            style="letter-spacing: normal; font-size: 14px;">WITH BLESSINGS AND GRACE</span>
           <h3 data-i18n="presence" style="letter-spacing: normal;">In the Presence of</h3>
           <div class="gold-rule"><i></i><b>✦</b><i></i></div>
         </div>
@@ -221,7 +238,8 @@
             <p data-i18n="leader3">Senior Pastor, Emmanuel AG Church, Port Blair, Andaman &amp; Nicobar Islands</p>
           </article>
         </div>
-        <p class="ministry reveal" data-i18n="ministry" style="font-size: 12px;">The wedding ceremony will be consecrated under the aegis of <b>Ruah Ministries</b>.</p>
+        <p class="ministry reveal" data-i18n="ministry" style="font-size: 12px;">The wedding ceremony will be
+          consecrated under the aegis of <b>Ruah Ministries</b>.</p>
       </div>
     </section>
 
@@ -230,9 +248,11 @@
       <div class="wide blessing-inner reveal">
         <span data-i18n="grace" style="font-size: 14px; letter-spacing: normal;">BY THE GRACE OF GOD</span>
         <h3 data-i18n="covenant">Two lives.<br><em>One covenant.</em></h3>
-        <p data-i18n="blessingText">With grateful hearts, Prince and Priya invites you to witness and celebrate their union as they begin their married life in faith, love and fellowship.</p>
+        <p data-i18n="blessingText">With grateful hearts, Prince and Priya invites you to witness and celebrate their
+          union as they begin their married life in faith, love and fellowship.</p>
         <div class="gold-rule"><i></i><b>♥</b><i></i></div>
-        <small data-i18n="psalm" style="letter-spacing: normal;">“The LORD has done great things for us, and we are filled with joy.”<br>— PSALM 126:3</small>
+        <small data-i18n="psalm" style="letter-spacing: normal;">“The LORD has done great things for us, and we are
+          filled with joy.”<br>— PSALM 126:3</small>
       </div>
     </section>
 
@@ -243,14 +263,16 @@
         <h3 style="font-size: 40px;">Ms. Blessy Jesintha,<br>Relatives &amp; Friends</h3>
         <div class="gold-rule"><i></i><b>♥</b><i></i></div>
         <small data-i18n="rsvp">RSVP</small>
-        <p><a href="tel:+919725429896">+91 97254 29896</a><b>·</b><a href="tel:+918460677736">+91 84606 77736</a>·</b><a href="tel:+918190963738">+91 81909 63738</a></p>
+        <p><a href="tel:+919725429896">+91 97254 29896</a><b>·</b><a href="tel:+918460677736">+91 84606 77736</a>·</b><a
+            href="tel:+918190963738">+91 81909 63738</a></p>
         <em data-i18n="rsvpText">We cannot wait to celebrate this blessed beginning with you.</em>
       </div>
     </section>
 
     <footer>
       <div>P <span>&amp;</span> P</div>
-      <p>PRINCE &amp; PRIYA · 16 · 10 · 2026</p><a href="#hero" data-i18n="backTop" style="letter-spacing: normal;">BACK TO THE BEGINNING ↑</a>
+      <p>PRINCE &amp; PRIYA · 16 · 10 · 2026</p><a href="#hero" data-i18n="backTop" style="letter-spacing: normal;">BACK
+        TO THE BEGINNING ↑</a>
     </footer>
   </main>
 

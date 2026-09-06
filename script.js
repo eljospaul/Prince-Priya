@@ -26,7 +26,7 @@ if (openButton) {
 
     if (audio) {
       try {
-        audio.volume = 0.7;
+        audio.volume = 0.5;
 
         /*
           Set the music source only after the user clicks.
@@ -35,7 +35,7 @@ if (openButton) {
         */
         if (!audio.src || audio.src === window.location.href) {
           audio.src =
-            'https://eljospaul.github.io/Prince-Priya/v1/assets/ambient.mp3';
+            '/assets/ambient.mp3';
         }
 
         const playPromise = audio.play();
