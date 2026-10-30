@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-label="Story photograph 02 - placeholder photograph">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B58B50" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#D8C1A0" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="#F5EBDD"/>
+  <rect x="8" y="8" width="884" height="584" fill="none" stroke="#B58B50" stroke-width="2"/>
+  <rect x="16" y="16" width="868" height="568" fill="none" stroke="#D8C1A0" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="450" y="290" font-family="Georgia, serif" font-size="26" font-weight="600" font-style="normal" fill="#493126" text-anchor="middle">Story photograph 02</text>
+  <text x="450" y="318" font-family="Georgia, serif" font-size="14" font-weight="normal" font-style="italic" fill="#702B32" text-anchor="middle">A Little Forever · placeholder</text>
+  <text x="450" y="570" font-family="Georgia, serif" font-size="13" font-weight="normal" font-style="normal" fill="#9a7e5f" text-anchor="middle">Replace with a real photograph</text>
+  <circle cx="878" cy="578" r="6" fill="#A92D32"/>
+  <circle cx="878" cy="578" r="2" fill="#FFFBF5"/>
+</svg>

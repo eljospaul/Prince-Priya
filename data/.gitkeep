@@ -1,0 +1,2 @@
+# Wish data persists here (data/wishes.json, data/sessions.json).
+# This directory is gitignored; it is created at runtime.

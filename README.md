@@ -1,31 +1,56 @@
-# Prince & Priya — Short Cinematic Wedding Invitation
+# A Little Forever
 
-This is a shortened, mobile-first adaptation of the Prince-Priya cinematic invitation.
+An elegant, production-ready wedding memory website — a curated digital scrapbook for a newly married couple. Built with Next.js 15, TypeScript, and Tailwind CSS.
 
-## Changes made
-- Kept the original dark wine / champagne-gold visual system, typography and cinematic mood.
-- Replaced the wax-seal monogram with a **holding-hands couple icon** drawn as inline SVG.
-- Removed the separate bride/groom portraits and all memory/gallery photos.
-- Uses only `assets/couple.jpg` (the newly uploaded couple-standing photograph).
-- Reworked the storyboard into 3 sticky chapters using the same photograph.
-- Added Christian wedding content: Mark 10:9, Ecclesiastes 4:12, a cross motif and Psalm 126:3.
-- Kept golden particles, noise, parallax, sticky scrolling, film-style reveal, countdown, wedding details and RSVP.
-- Music attempts to start immediately on the seal click. If `assets/ambient.mp3` is absent, it falls back to the public GitHub Pages copy of the original site's ambient track.
-- Mobile layouts are deliberately re-composed rather than simply scaled down.
+## Features
 
-## Run
-Open `index.html`, or serve the folder with:
+- **Home** — cinematic hero, welcome message, featured memories, story preview, guest wishes preview
+- **Our Story** — editorial, scrapbook-style narrative interwoven with photographs
+- **Gallery** — responsive editorial grid with category filters, lightbox with prev/next and swipe
+- **Best Wishes** — working guestbook with persistent storage, moderation (pending/approved/hidden), and admin controls
+- **Admin** — password-protected dashboard to approve/delete wishes and edit site content
 
-    python3 -m http.server 8000
+## Getting started
 
-Then open `http://localhost:8000`.
+```bash
+npm install
+cp .env.example .env.local
+# Fill in ADMIN_PASSWORD_HASH and SESSION_SECRET in .env.local
+npm run dev
+```
 
-## Music
-For a fully self-contained deployment, place your licensed/royalty-free track at:
+Open http://localhost:3000.
 
-    assets/ambient.mp3
+## Photos
 
-The current JavaScript includes a fallback to the original public Prince-Priya GitHub Pages audio file if the local track is unavailable.
+This repo ships with SVG placeholder images in `public/uploads/`. Replace them with the couple's real
+wedding and pre-wedding photographs, then update `content/gallery.ts` with the real paths, captions, and
+categories. Image file names referenced in `content/gallery.ts` must exist under `public/` for `next/image`
+to optimize them.
 
-## Edit wedding details
-Most text and links are in `index.html`. The wedding countdown is in `script.js`.
+Generate fresh placeholders:
+
+```bash
+npm run generate:placeholders
+```
+
+## Admin
+
+1. Add a password hash to `ADMIN_PASSWORD_HASH` in `.env.local` (SHA-256 of your password).
+2. Add a random string to `SESSION_SECRET`.
+3. Visit `/admin/login`, sign in, then manage wishes at `/admin`.
+
+Without these variables, the admin area is locked and wish submissions are stored locally as pending.
+
+## Content
+
+All editable copy lives in `content/`:
+- `content/config.ts` — couple names, initials, wedding date, hero image, tagline
+- `content/story.ts` — the Our Story narrative blocks
+- `content/gallery.ts` — photographs, categories, captions
+
+## Deployment
+
+Vercel (recommended): connect the repository and add the environment variables from `.env.example`.
+The local JSON store (`data/wishes.json`) persists on platforms with a writable filesystem during the
+deployment lifecycle; for long-term production use, connect Supabase via `lib/supabase.ts`.
